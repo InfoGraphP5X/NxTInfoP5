@@ -24,6 +24,8 @@ body {
 
 .image-container img {
     display: block; /* Assures the image does not have extra space around it */
+    width: 1039px;
+    height: 736px;
 }
 
 .clickable-area {
@@ -164,7 +166,7 @@ body {
 </style>
 
 <script>
-for (let i = 1; i <= 24; i++) {
+for (let i = 1; i <= 25; i++) {
     document.querySelector(`#Zone${i}`).addEventListener('click', function(event) {
         event.preventDefault();
         alert(`Zone ${i} cliquée!`);
