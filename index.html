@@ -6,8 +6,201 @@
     <title>Image Cliquable</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
+<style>
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container img {
+    display: block; /* Assures the image does not have extra space around it */
+}
+
+.clickable-area {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    background-color: rgba(0, 0, 0, 0); /* Transparent */
+    cursor: pointer;
+    z-index: 10; /* Ensure clickable areas are above the image */
+}
+
+/* Positionnement des zones cliquables */
+#Zone1 {
+    top: 380px;
+    left: 460px;
+}
+
+#Zone2 {
+    top: 260px;
+    left: 560px;
+}
+
+#Zone3 {
+    top: 260px;
+    left: 770px;
+}
+
+#Zone4 {
+    top: 150px;
+    left: 670px;
+}
+
+#Zone5 {
+    top: 150px;
+    left: 860px;
+}
+
+#Zone6 {
+    top: 150px;
+    left: 960px;
+}
+
+#Zone7 {
+    top: 150px;
+    left: 560px;
+}
+
+#Zone8 {
+    top: 650px;
+    left: 850px;
+    width: 150px;
+}
+
+#Zone9 {
+    top: 150px;
+    left: 50px;
+}
+
+#Zone10 {
+    top: 150px;
+    left: 150px;
+}
+
+#Zone11 {
+    top: 150px;
+    left: 260px;
+}
+
+#Zone12 {
+    top: 150px;
+    left: 360px;
+}
+
+#Zone13 {
+    top: 150px;
+    left: 460px;
+}
+
+#Zone14 {
+    top: 380px;
+    left: 670px;
+}
+
+#Zone15 {
+    top: 150px;
+    left: 760px;
+}
+
+#Zone16 {
+    top: 260px;
+    left: 45px;
+}
+
+#Zone17 {
+    top: 260px;
+    left: 150px;
+}
+
+#Zone18 {
+    top: 260px;
+    left: 260px;
+}
+
+#Zone19 {
+    top: 260px;
+    left: 360px;
+}
+
+#Zone20 {
+    top: 260px;
+    left: 460px;
+}
+
+#Zone21 {
+    top: 260px;
+    left: 670px;
+}
+
+#Zone22 {
+    top: 150px;
+    left: 670px;
+}
+
+#Zone23 {
+    top: 380px;
+    left: 42px;
+}
+
+#Zone24 {
+    top: 370px;
+    left: 150px;
+}
+
+#Zone25 {
+    top: 260px;
+    left: 960px;
+}
+</style>
+
+<script>
+for (let i = 1; i <= 24; i++) {
+    document.querySelector(`#Zone${i}`).addEventListener('click', function(event) {
+        event.preventDefault();
+        alert(`Zone ${i} cliquée!`);
+    });
+}
+</script>
+
 <body>
-<p>ICI IL FAUT CREER LE HUB</p>
-    <a href="characters/joker.html">TIENS LIEN</a>
+    <div class="image-container">
+        <img src="./img/hub.png" alt="Ton Image">
+        <a href="./" class="clickable-area" id="Zone1"></a>
+        <a href="./" class="clickable-area" id="Zone2"></a>
+        <a href="./" class="clickable-area" id="Zone3"></a>
+        <a href="./" class="clickable-area" id="Zone4"></a>
+        <a href="./characters/ryuji.html" class="clickable-area" id="Zone5"></a>
+        <a href="./" class="clickable-area" id="Zone6"></a>
+        <a href="./" class="clickable-area" id="Zone7"></a>
+        <a href="./" class="clickable-area" id="Zone8"></a>
+        <a href="./characters/joker.html" class="clickable-area" id="Zone9"></a>
+        <a href="./" class="clickable-area" id="Zone10"></a>
+        <a href="./characters/mona.html" class="clickable-area" id="Zone11"></a>
+        <a href="./" class="clickable-area" id="Zone12"></a>
+        <a href="./" class="clickable-area" id="Zone13"></a>
+        <a href="./" class="clickable-area" id="Zone14"></a>
+        <a href="./" class="clickable-area" id="Zone15"></a>
+        <a href="./" class="clickable-area" id="Zone16"></a>
+        <a href="./" class="clickable-area" id="Zone17"></a>
+        <a href="./" class="clickable-area" id="Zone18"></a>
+        <a href="./" class="clickable-area" id="Zone19"></a>
+        <a href="./" class="clickable-area" id="Zone20"></a>
+        <a href="./" class="clickable-area" id="Zone21"></a>
+        <a href="./" class="clickable-area" id="Zone22"></a>
+        <a href="./" class="clickable-area" id="Zone23"></a>
+        <a href="./" class="clickable-area" id="Zone24"></a>
+        <a href="./" class="clickable-area" id="Zone25"></a>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
