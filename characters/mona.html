@@ -8,83 +8,81 @@
 </head>
 
 <style>
-
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
-}
-
-.image-container img{
-    position: relative;
-    display: inline-block;
-	width: 1039px;
-    height: 736px;
-}
-
-.image-container img {
-    display: block; /* Assures the image does not have extra space around it */
-}
-
-.clickable-area {
-    position: absolute;
-    width: 90px;
-    height: 90px;
-    background-color: rgb(0, 0, 0, 0); /* Transparent */
-    cursor: pointer;
-    z-index: 10; /* Ensure clickable areas are above the image */
-}
-
-/* Positionnement des zones cliquables */
-#team1Perso1 {
-        top: 62.22%;
-        left: 60.63%;
-        }   
-
-        #team1Perso2 {
-            top: 62.22%;
-            left: 75.07%;
-        }
-
-        #team1Perso3 {
-            top: 62.22%;
-            left: 86.62%;
-        }
-
-        #team2Perso1 {
-            top: 78.88%;
-            left: 60.63%;
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
     }
 
-        #team2Perso2 {
-            top: 78.88%;
-            left: 75.07%;
-        }
+    .image-container {
+        position: relative;
+        display: inline-block;
+    }
 
-        #team2Perso3 {
-            top: 78.88%;
-            left: 86.62%;
-        }
+    .image-container img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .clickable-area {
+        position: absolute;
+        width: 10%;
+        height: 15%;
+
+        background-color: rgba(63, 17, 247, 0.5); /* Semi-transparent for visibility */
+        cursor: pointer;
+    }
+
+    #team1Perso1 {
+    top: 62.22%;
+    left: 60.63%;
+    }   
+
+    #team1Perso2 {
+        top: 62.22%;
+        left: 75.07%;
+    }
+
+    #team1Perso3 {
+        top: 62.22%;
+        left: 86.62%;
+    }
+
+    #team2Perso1 {
+        top: 78.88%;
+        left: 60.63%;
+}
+
+    #team2Perso2 {
+        top: 78.88%;
+        left: 75.07%;
+    }
+
+    #team2Perso3 {
+        top: 78.88%;
+        left: 86.62%;
+    }
 
 #Carte1 {
-    top: 20.38%;
-    left: 42.36%;
-    width: 18.28%;
-    height: 16.30%;
-    overflow: hidden;
-    transform: rotate(75deg);
+top: 15.38%;
+left: 42.36%;
+width: 18.28%;
+height: 16.30%;
+overflow: hidden;
+transform: rotate(75deg);
 }
 
 #Carte2 {
-    top: 20.38%;
-    left: 62.55%;
-    width: 18.28%;
-    height: 16.30%;
-    overflow: hidden;
-    transform: rotate(75deg);
+top: 15.38%;
+left: 59.55%;
+width: 18.28%;
+height: 16.30%;
+overflow: hidden;
+transform: rotate(75deg);
 }
 
 </style>
