@@ -4,147 +4,152 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Cliquable</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
 
-<style>
+        .image-container {
+            position: relative;
+            display: inline-block;
+        }
 
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
-}
+        .image-container img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
 
-.image-container img{
-    position: relative;
-    display: inline-block;
-	width: 1039px;
-    height: 736px;
-}
+        .clickable-area {
+            position: absolute;
+            width: 10%;
+            height: 15%;
 
-.image-container img {
-    display: block; /* Assures the image does not have extra space around it */
-}
+            background-color: rgba(63, 17, 247, 0.5); /* Semi-transparent for visibility */
+            cursor: pointer;
+        }
 
-.clickable-area {
-    position: absolute;
-    width: 90px;
-    height: 90px;
-    background-color: rgb(63, 17, 247); /* Transparent */
-    cursor: pointer;
-    z-index: 10; /* Ensure clickable areas are above the image */
-}
+        #team1Perso1 {
+        top: 62.22%;
+        left: 60.63%;
+        }   
 
-/* Positionnement des zones cliquables */
-#team1Perso1 {
-    top: 590px;
-    left: 1060px;
-}
+        #team1Perso2 {
+            top: 62.22%;
+            left: 75.07%;
+        }
 
-#team1Perso2 {
-    top: 590px;
-    left: 1210px;
-}
+        #team1Perso3 {
+            top: 62.22%;
+            left: 86.62%;
+        }
 
-#team1Perso3 {
-    top: 590px;
-    left: 1340px;
-}
+        #team2Perso1 {
+            top: 78.88%;
+            left: 60.63%;
+    }
 
-#team2Perso1 {
-    top: 710px;
-    left: 1060px;
-}
+        #team2Perso2 {
+            top: 78.88%;
+            left: 75.07%;
+        }
 
-#team2Perso2 {
-    top: 710px;
-    left: 1210px;
-}
-
-#team2Perso3 {
-    top: 710px;
-    left: 1340px;
-}
+        #team2Perso3 {
+            top: 78.88%;
+            left: 86.62%;
+        }
 
 #Carte1 {
-    top: 260px;
-    left: 880px;
-    width: 190px;
-    height: 120px;
+    top: 20.38%;
+    left: 42.36%;
+    width: 18.28%;
+    height: 16.30%;
     overflow: hidden;
     transform: rotate(75deg);
 }
 
 #Carte2 {
-    top: 260px;
-    left: 1100px;
-    width: 190px;
-    height: 120px;
+    top: 20.38%;
+    left: 62.55%;
+    width: 18.28%;
+    height: 16.30%;
     overflow: hidden;
     transform: rotate(75deg);
 }
 
-</style>
-
-<script>
-document.querySelector('#team1Perso1').addEventListener('click', function(event) {
-    event.preventDefault();
-    alert('Zone 1 cliquée!');
-});
-
-document.querySelector('#team1Perso2').addEventListener('click', function(event) {
-    event.preventDefault();
-    alert('Zone 2 cliquée!');
-});
-
-document.querySelector('#team1Perso3').addEventListener('click', function(event) {
-    event.preventDefault();
-    alert('Zone 3 cliquée!');
-});
-
-document.querySelector('#team2Perso1').addEventListener('click', function(event) {
-    event.preventDefault();
-    alert('Zone 1 cliquée!');
-});
-
-document.querySelector('#team2Perso2').addEventListener('click', function(event) {
-    event.preventDefault();
-    alert('Zone 2 cliquée!');
-});
-
-document.querySelector('#team2Perso3').addEventListener('click', function(event) {
-    event.preventDefault();
-    alert('Zone 3 cliquée!');
-});
-
-document.querySelector('#Carte1').addEventListener('click', function(event) {
-    event.preventDefault();
-    alert('Zone 3 cliquée!');
-});
-
-document.querySelector('#Carte2').addEventListener('click', function(event) {
-    event.preventDefault();
-    alert('Zone 3 cliquée!');
-});
-
-</script>
+    </style>
+</head>
 <body>
+    <div onmousemove="EmplacementPointeur(event);"></div> 
     <div class="image-container">
         <img src="../img/joker.png" alt="Ton Image">
-        <a href="./joker.html" class="clickable-area" id="team1Perso1"></a>
-        <a href="./mona.html" class="clickable-area" id="team1Perso2"></a>
-        <a href="./joker.html" class="clickable-area" id="team1Perso3"></a>
-        <a href="./joker.html" class="clickable-area" id="team2Perso1"></a>
-        <a href="./joker.html" class="clickable-area" id="team2Perso2"></a>
-        <a href=".joker.html" class="clickable-area" id="team2Perso3"></a>
-        <a href="./joker.html" class="clickable-area" id="Carte1"></a>
-        <a href="./joker.htlm" class="clickable-area" id="Carte2"></a>
-    
-
+        <div class="clickable-area" id="team1Perso1"></div>
+        <div class="clickable-area" id="team1Perso2"></div>
+        <div class="clickable-area" id="team1Perso3"></div>
+        <div class="clickable-area" id="team2Perso1"></div>
+        <div class="clickable-area" id="team2Perso2"></div>
+        <div class="clickable-area" id="team2Perso3"></div>
+        <div class="clickable-area" id="Carte1"></div>
+        <div class="clickable-area" id="Carte2"></div>
     </div>
-    <script src="script.js"></script>
+    <script>
+        document.querySelector('#team1Perso1').addEventListener('click', function(event) {
+            event.preventDefault();
+            alert('Zone 1 cliquée!');
+        });
+
+        document.querySelector('#team1Perso2').addEventListener('click', function(event) {
+            event.preventDefault();
+            alert('Zone 2 cliquée!');
+        });
+
+        document.querySelector('#team1Perso3').addEventListener('click', function(event) {
+            event.preventDefault();
+            alert('Zone 3 cliquée!');
+        });
+
+        document.querySelector('#team2Perso1').addEventListener('click', function(event) {
+            event.preventDefault();
+            alert('Zone 1 cliquée!');
+        });
+
+        document.querySelector('#team2Perso2').addEventListener('click', function(event) {
+            event.preventDefault();
+            alert('Zone 2 cliquée!');
+        });
+
+        document.querySelector('#team2Perso3').addEventListener('click', function(event) {
+            event.preventDefault();
+            alert('Zone 3 cliquée!');
+        });
+
+        document.querySelector('#Carte1').addEventListener('click', function(event) {
+            event.preventDefault();
+            alert('Zone 1 cliquée!');
+        });
+
+        document.querySelector('#Carte2').addEventListener('click', function(event) {
+            event.preventDefault();
+            alert('Zone 2 cliquée!');
+        });
+
+        function EmplacementPointeur(Evenement){
+        if(!document.all){
+                CurseurX = Evenement.clientX;
+                CurseurY = Evenement.clientY;
+        }
+        else {
+                CurseurX = event.x + document.body.scrollLeft;
+                CurseurY = event.y + document.body.scrollTop;   
+        }
+        alert(CurseurX+' / '+CurseurY);
+}
+
+    </script>
 </body>
 </html>
