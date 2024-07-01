@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Cliquable</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+    }
+    
+    .image-container {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .image-container img {
+        display: block; /* Assures the image does not have extra space around it */
+        width: 1039px;
+        height: 736px;
+    }
+    
+    .clickable-area {
+        position: absolute;
+        width: 115px;
+        height: 115px;
+        background-color: rgba(0, 0, 120, 0); /* Transparent */
+        cursor: pointer;
+        z-index: 10; /* Ensure clickable areas are above the image */
+    }
+    
+    /* Positionnement des zones cliquables */
+    #Zone1 {
+        top: 310px;
+        left: 580px;
+    }
+    </style>
+
+<body>
+    <div class="image-container">
+        <img src="../../img/cards/speciales/Tiger_Panther.png" alt="Ton Image">
+        <a href="../../characters/" class="clickable-area" id="Zone1"></a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Cliquable</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container img {
+    display: block; /* Assures the image does not have extra space around it */
+    width: 1039px;
+    height: 736px;
+}
+
+.clickable-area {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    background-color: rgba(0, 0, 0, 0); /* Transparent */
+    cursor: pointer;
+    z-index: 10; /* Ensure clickable areas are above the image */
+}
+
+/* Positionnement des zones cliquables */
+#Zone1 {
+    top: 310px;
+    left: 460px;
+    width: 130px;
+    height: 70px;
+    overflow: hidden;
+    transform: rotate(75deg);
+}
+
+#Zone2 {
+    top: 310px;
+    left: 610px;
+    width: 130px;
+    height: 70px;
+    overflow: hidden;
+    transform: rotate(75deg);
+}
+
+#Zone3 {
+    top: 295px;
+    left: 740px;
+    width: 130px;
+    height: 70px;
+    overflow: hidden;
+    transform: rotate(75deg);
+}
+
+#Zone4 {
+    top: 150px;
+    left: 720px;
+    width: 130px;
+    height: 70px;
+    overflow: hidden;
+    transform: rotate(75deg);
+}
+
+#Zone5 {
+    top: 150px;
+    left: 870px;
+    width: 130px;
+    height: 70px;
+    overflow: hidden;
+    transform: rotate(75deg);
+}
+
+#Zone6 {
+    top: 460px;
+    left: 760px;
+    width: 130px;
+    height: 70px;
+    overflow: hidden;
+    transform: rotate(75deg);
+}
+
+#Zone7 {
+    top: 150px;
+    left: 590px;
+    width: 130px;
+    height: 70px;
+    overflow: hidden;
+    transform: rotate(75deg);
+}
+
+#Zone8 {
+    top: 620px;
+    left: 650px;
+    width: 130px;
+    height: 70px;
+    overflow: hidden;
+    transform: rotate(75deg);
+}
+
+#Zone9 {
+    top: 150px;
+    left: 20px;
+    width: 130px;
+    height: 70px;
+    overflow: hidden;
+    transform: rotate(75deg);
+}
+
+#Zone10 {
+    top: 150px;
+    left: 150px;
+    width: 130px;
+    height: 70px;
+    overflow: hidden;
+    transform: rotate(75deg);
+}
+
+#Zone11 {
+    top: 150px;
+    left: 300px;
+    width: 130px;
+    height: 70px;
+    overflow: hidden;
+    transform: rotate(75deg);
+}
+
+#Zone12 {
+    top: 480px;
+    left: 345px;
+    width: 130px;
+    height: 70px;
+    overflow: hidden;
+    transform: rotate(75deg);
+}
+
+#Zone13 {
+    top: 150px;
+    left: 450px;
+    width: 130px;
+    height: 70px;
+    overflow: hidden;
+    transform: rotate(75deg);
+}
+
+#Zone14 {
+    top: 470px;
+    left: 475px;
+    width: 130px;
+    height: 70px;
+    overflow: hidden;
+    transform: rotate(75deg);
+}
+
+#Zone15 {
+    top: 460px;
+    left: 630px;
+    width: 130px;
+    height: 70px;
+    overflow: hidden;
+    transform: rotate(75deg);
+}
+
+#Zone16 {
+    top: 470px;
+    left: 190px;
+    width: 130px;
+    height: 70px;
+    overflow: hidden;
+    transform: rotate(75deg);
+}
+
+#Zone17 {
+    top: 310px;
+    left: 170px;
+    width: 130px;
+    height: 70px;
+    overflow: hidden;
+    transform: rotate(75deg);
+}
+
+#Zone18 {
+    top: 310px;
+    left: 315px;
+    width: 130px;
+    height: 70px;
+    overflow: hidden;
+    transform: rotate(75deg);
+
+}
+
+#Zone19 {
+    top: 625px;
+    left: 350px;
+    width: 130px;
+    height: 70px;
+    overflow: hidden;
+    transform: rotate(75deg);
+}
+
+#Zone20 {
+    top: 670px;
+    left: 10px;
+    width: 150px;
+    height: 50px;
+}
+</style>
+
+<script>
+for (let i = 1; i <= 25; i++) {
+    document.querySelector(`#Zone${i}`).addEventListener('click', function(event) {
+        event.preventDefault();
+        alert(`Zone ${i} cliquée!`);
+    });
+}
+</script>
+
+<body>
+    <div class="image-container">
+        <img src="./img/cartes.png" alt="Ton Image">
+        <a href="./cards/Carte_fleuret.html" class="clickable-area" id="Zone1"></a>
+        <a href="./cards/Carte_Yusuke__Mont.html" class="clickable-area" id="Zone2"></a>
+        <a href="./" class="clickable-area" id="Zone3"></a>
+        <a href="./" class="clickable-area" id="Zone4"></a>
+        <a href="./cards/speciales/Horse_blue_Skull_Mona_Mont.html" class="clickable-area" id="Zone5"></a>
+        <a href="./cards/Carte_Yuki__Puppet.html" class="clickable-area" id="Zone6"></a>
+        <a href="./" class="clickable-area" id="Zone7"></a>
+        <a href="./" class="clickable-area" id="Zone8"></a>
+        <a href="./characters/joker.html" class="clickable-area" id="Zone9"></a>
+        <a href="./cards/speciales/Horse_red_Joker_Rin_Cattle_Closer.html" class="clickable-area" id="Zone10"></a>
+        <a href="./characters/mona.html" class="clickable-area" id="Zone11"></a>
+        <a href="./cards/Carte_Rin__Key__cattle__Soy__Closer.html" class="clickable-area" id="Zone12"></a>
+        <a href="./cards/speciales/Tiger_Panther.html" class="clickable-area" id="Zone13"></a>
+        <a href="./cards/Carte_skull.html" class="clickable-area" id="Zone14"></a>
+        <a href="./" class="clickable-area" id="Zone15"></a>
+        <a href="./cards/Carte_Riddle__Moko__Leon__Okyann.html" class="clickable-area" id="Zone16"></a>
+        <a href="./cards/Carte_Yui.html" class="clickable-area" id="Zone17"></a>
+        <a href="./" class="clickable-area" id="Zone18"></a>
+        <a href="./cards/Carte_panther.html" class="clickable-area" id="Zone19"></a>
+        <a href="./index.html" class="clickable-area" id="Zone20"></a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
