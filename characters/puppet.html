@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Infographie Morgana</title>
+    <title>Infographie Joker</title>
     <link rel="icon" type="image/x-icon" href="../img/wonder_pd.ico">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -40,37 +40,27 @@
 
     #team1Perso1 {
     top: 62.22%;
-    left: 60.63%;
+    left: 66.63%;
     }   
 
     #team1Perso2 {
         top: 62.22%;
-        left: 75.07%;
-    }
-
-    #team1Perso3 {
-        top: 62.22%;
-        left: 86.62%;
+        left: 78.07%;
     }
 
     #team2Perso1 {
-        top: 78.88%;
-        left: 60.63%;
+        top: 79.88%;
+        left: 65.63%;
 }
 
     #team2Perso2 {
         top: 78.88%;
-        left: 75.07%;
-    }
-
-    #team2Perso3 {
-        top: 78.88%;
-        left: 86.62%;
+        left: 78.07%;
     }
 
 #Carte1 {
 top: 15.38%;
-left: 42.36%;
+left: 48.36%;
 width: 18.28%;
 height: 16.30%;
 overflow: hidden;
@@ -79,7 +69,7 @@ transform: rotate(75deg);
 
 #Carte2 {
 top: 15.38%;
-left: 59.55%;
+left: 63.55%;
 width: 18.28%;
 height: 16.30%;
 overflow: hidden;
@@ -99,11 +89,6 @@ document.querySelector('#team1Perso2').addEventListener('click', function(event)
     alert('Zone 2 cliquée!');
 });
 
-document.querySelector('#team1Perso3').addEventListener('click', function(event) {
-    event.preventDefault();
-    alert('Zone 3 cliquée!');
-});
-
 document.querySelector('#team2Perso1').addEventListener('click', function(event) {
     event.preventDefault();
     alert('Zone 1 cliquée!');
@@ -112,11 +97,6 @@ document.querySelector('#team2Perso1').addEventListener('click', function(event)
 document.querySelector('#team2Perso2').addEventListener('click', function(event) {
     event.preventDefault();
     alert('Zone 2 cliquée!');
-});
-
-document.querySelector('#team2Perso3').addEventListener('click', function(event) {
-    event.preventDefault();
-    alert('Zone 3 cliquée!');
 });
 
 document.querySelector('#Carte1').addEventListener('click', function(event) {
@@ -132,15 +112,13 @@ document.querySelector('#Carte2').addEventListener('click', function(event) {
 </script>
 <body>
     <div class="image-container">
-        <img src="../img/characters/vino.png">
-        <a href="../characters/queen.html" class="clickable-area" id="team1Perso1"></a>
-        <a href="../characters/leon.html" class="clickable-area" id="team1Perso2"></a>
-        <a href="../characters/okyann.html" class="clickable-area" id="team1Perso3"></a>
-        <a href="../characters/queen.html" class="clickable-area" id="team2Perso1"></a>
-        <a href="../characters/soy.html" class="clickable-area" id="team2Perso2"></a>
-        <a href="../characters/okyann.html" class="clickable-area" id="team2Perso3"></a>
-        <a href="../cards/speciales/Blue_Gazelle_Vino_Fleuret.html" class="clickable-area" id="Carte1"></a>
-        <a href="../cards/Carte_Queen_Vino.html" class="clickable-area" id="Carte2"></a>
+        <img src="../img/characters/puppet.png">
+        <a href="./yusuke.html" class="clickable-area" id="team1Perso1"></a>
+        <a href="./yuki.html" class="clickable-area" id="team1Perso2"></a>
+        <a href="./ryuji.html" class="clickable-area" id="team2Perso1"></a>
+        <a href="./leon.html" class="clickable-area" id="team2Perso2"></a>
+        <a href="../cards/speciales/Horse_Purple_Yuki_Puppet.html" class="clickable-area" id="Carte1"></a>
+        <a href="../cards/Carte_Yuki__Puppet.html" class="clickable-area" id="Carte2"></a>
     
 
     </div>
