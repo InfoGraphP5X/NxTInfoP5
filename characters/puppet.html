@@ -40,27 +40,37 @@
 
     #team1Perso1 {
     top: 62.22%;
-    left: 66.63%;
+    left: 60.63%;
     }   
 
     #team1Perso2 {
         top: 62.22%;
-        left: 78.07%;
+        left: 75.07%;
+    }
+
+    #team1Perso3 {
+        top: 62.22%;
+        left: 86.62%;
     }
 
     #team2Perso1 {
-        top: 79.88%;
-        left: 65.63%;
+        top: 78.88%;
+        left: 60.63%;
 }
 
     #team2Perso2 {
         top: 78.88%;
-        left: 78.07%;
+        left: 75.07%;
+    }
+
+    #team2Perso3 {
+        top: 78.88%;
+        left: 86.62%;
     }
 
 #Carte1 {
-top: 15.38%;
-left: 48.36%;
+top: 16.38%;
+left: 45.36%;
 width: 18.28%;
 height: 16.30%;
 overflow: hidden;
@@ -68,7 +78,7 @@ transform: rotate(75deg);
 }
 
 #Carte2 {
-top: 15.38%;
+top: 14.38%;
 left: 63.55%;
 width: 18.28%;
 height: 16.30%;
@@ -89,6 +99,11 @@ document.querySelector('#team1Perso2').addEventListener('click', function(event)
     alert('Zone 2 cliquée!');
 });
 
+document.querySelector('#team1Perso3').addEventListener('click', function(event) {
+    event.preventDefault();
+    alert('Zone 3 cliquée!');
+});
+
 document.querySelector('#team2Perso1').addEventListener('click', function(event) {
     event.preventDefault();
     alert('Zone 1 cliquée!');
@@ -97,6 +112,11 @@ document.querySelector('#team2Perso1').addEventListener('click', function(event)
 document.querySelector('#team2Perso2').addEventListener('click', function(event) {
     event.preventDefault();
     alert('Zone 2 cliquée!');
+});
+
+document.querySelector('#team2Perso3').addEventListener('click', function(event) {
+    event.preventDefault();
+    alert('Zone 3 cliquée!');
 });
 
 document.querySelector('#Carte1').addEventListener('click', function(event) {
@@ -114,9 +134,11 @@ document.querySelector('#Carte2').addEventListener('click', function(event) {
     <div class="image-container">
         <img src="../img/characters/puppet.png">
         <a href="./yusuke.html" class="clickable-area" id="team1Perso1"></a>
-        <a href="./yuki.html" class="clickable-area" id="team1Perso2"></a>
-        <a href="./ryuji.html" class="clickable-area" id="team2Perso1"></a>
+        <a href="./rin.html" class="clickable-area" id="team1Perso2"></a>
+        <a href="./yuki.html" class="clickable-area" id="team1Perso3"></a>
+        <a href="./yusuke.html" class="clickable-area" id="team2Perso1"></a>
         <a href="./leon.html" class="clickable-area" id="team2Perso2"></a>
+        <a href="./mont.html" class="clickable-area" id="team2Perso3"></a>
         <a href="../cards/speciales/Horse_Purple_Yuki_Puppet.html" class="clickable-area" id="Carte1"></a>
         <a href="../cards/Carte_Yuki__Puppet.html" class="clickable-area" id="Carte2"></a>
     

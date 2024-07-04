@@ -34,33 +34,43 @@
         width: 10%;
         height: 15%;
 
-        background-color: rgba(63, 17, 247,0); /* Semi-transparent for visibility */
+        background-color: rgba(63, 17, 247, 0); /* Semi-transparent for visibility */
         cursor: pointer;
     }
 
     #team1Perso1 {
     top: 62.22%;
-    left: 64.63%;
+    left: 60.63%;
     }   
 
     #team1Perso2 {
         top: 62.22%;
-        left: 78.07%;
+        left: 75.07%;
+    }
+
+    #team1Perso3 {
+        top: 62.22%;
+        left: 86.62%;
     }
 
     #team2Perso1 {
-        top: 79.88%;
-        left: 65.63%;
+        top: 78.88%;
+        left: 60.63%;
 }
 
     #team2Perso2 {
         top: 78.88%;
-        left: 78.07%;
+        left: 75.07%;
+    }
+
+    #team2Perso3 {
+        top: 78.88%;
+        left: 86.62%;
     }
 
 #Carte1 {
-top: 20.38%;
-left: 42.36%;
+top: 16.38%;
+left: 45.36%;
 width: 18.28%;
 height: 16.30%;
 overflow: hidden;
@@ -68,8 +78,8 @@ transform: rotate(75deg);
 }
 
 #Carte2 {
-top: 20.38%;
-left: 62.55%;
+top: 14.38%;
+left: 63.55%;
 width: 18.28%;
 height: 16.30%;
 overflow: hidden;
@@ -89,6 +99,11 @@ document.querySelector('#team1Perso2').addEventListener('click', function(event)
     alert('Zone 2 cliquée!');
 });
 
+document.querySelector('#team1Perso3').addEventListener('click', function(event) {
+    event.preventDefault();
+    alert('Zone 3 cliquée!');
+});
+
 document.querySelector('#team2Perso1').addEventListener('click', function(event) {
     event.preventDefault();
     alert('Zone 1 cliquée!');
@@ -97,6 +112,11 @@ document.querySelector('#team2Perso1').addEventListener('click', function(event)
 document.querySelector('#team2Perso2').addEventListener('click', function(event) {
     event.preventDefault();
     alert('Zone 2 cliquée!');
+});
+
+document.querySelector('#team2Perso3').addEventListener('click', function(event) {
+    event.preventDefault();
+    alert('Zone 3 cliquée!');
 });
 
 document.querySelector('#Carte1').addEventListener('click', function(event) {
@@ -114,9 +134,11 @@ document.querySelector('#Carte2').addEventListener('click', function(event) {
     <div class="image-container">
         <img src="../img/characters/okyann.png">
         <a href="./queen.html" class="clickable-area" id="team1Perso1"></a>
-        <a href="./vino.html" class="clickable-area" id="team1Perso2"></a>
-        <a href="./queen.html" class="clickable-area" id="team2Perso1"></a>
-        <a href="./joker.html" class="clickable-area" id="team2Perso2"></a>
+        <a href="./marian.html" class="clickable-area" id="team1Perso2"></a>
+        <a href="./vino.html" class="clickable-area" id="team1Perso3"></a>
+        <a href="./ryuji.html" class="clickable-area" id="team2Perso1"></a>
+        <a href="./queen.html" class="clickable-area" id="team2Perso2"></a>
+        <a href="./leon.html" class="clickable-area" id="team2Perso3"></a>
         <a href="../cards/speciales/Blue_Priestess_Fox_Bui_Okyann.html" class="clickable-area" id="Carte1"></a>
         <a href="../cards/Carte_Riddle__Moko__Leon__Okyann.html" class="clickable-area" id="Carte2"></a>
     
